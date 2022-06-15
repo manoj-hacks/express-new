@@ -1,6 +1,7 @@
-exports.dashboard =  (req, res, next) => {
-    res.render('index',{
-        pageTitle: 'Dashboard',
-        path: 'index'
-    });
+exports.dashboard = (req, res, next) => {
+  res.render("layout", {
+    pageTitle: "Dashboard",
+    path: "index",
+    template: "../views/index",
+  });
 };
